@@ -7,37 +7,39 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/grid.css">
-  <script src="./js/bootstrap.min.js"></script>
   <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
   <title>HYUNDAI N SERIES</title>
 </head>
 <body>
   <header>
-    <div class="container">
-      <!-- 반응형 -->
-      <div class="navbar-header">
-          <!-- 햄버거버튼 -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          <!-- 로고 -->
-          <a class="navbar-brand" href="#">
-            <img src="./images/logo.png" alt="">
-          </a>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- 반응형 -->
+          <div class="navbar-header">
+              <!-- 햄버거버튼 -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#listmenu">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <!-- 로고 -->
+              <a class="navbar-brand" href="#">
+                  <img src="./images/logo.png" alt="">
+              </a>
+          </div>
+          <div class="navbar-collapse collapse" id="listmenu">
+            <!-- 메뉴 -->
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">MODEL</a></li>
+              <li><a href="#">SERVICE</a></li>
+              <li><a href="#">EVENT</a></li>
+              <li><a href="#">COMPANY</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
-        <!-- 메뉴 -->
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">MODEL</a></li>
-          <li><a href="#">SERVICE</a></li>
-          <li><a href="#">EVENT</a></li>
-          <li><a href="#">COMPANY</a></li>
-      </ul>
-    </div>
+    </nav>
   </header>
 </body>
 </html>
