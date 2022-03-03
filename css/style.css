@@ -76,3 +76,69 @@ body {
 video {
   width: 100vw;
 }
+/* 구매혜택 Section */
+.text-title {
+  margin-bottom: 30px;
+}
+.text-title h2 {
+  font-weight: 700;
+}
+.buybox-wrap {
+  width: 370px;
+  height: 470px;
+  border-radius: 20px;
+  background-color: #ecf1f6;
+}
+.buybox-wrap .image-wrap {
+  text-align: center;
+  height: 265px;
+}
+.buybox-wrap .image-wrap img {
+  margin: 60px 0 80px;
+  width: 80%;
+}
+.buybox-wrap .textbox {
+  margin-left: 30px;
+}
+.buybox-wrap .textbox h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.buybox-wrap .textbox h4 {
+  color: #007fa8;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.buybox-wrap .textbox p {
+  font-size: 18px;
+}
+.buybox-wrap .buttonbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.buybox-wrap .buttonbox button {
+  width: 140px;
+  height: 40px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 10px;
+}
+.buybox-wrap .buttonbox button p {
+  font-weight: 400;
+}
+.buybox-wrap .buttonbox button:first-child {
+  background-color: #fff;
+}
+.buybox-wrap .buttonbox button:last-child{
+  background-color: #575757;
+}
+.buybox-wrap .buttonbox button:last-child p {
+  color: #fff;
+}
+.buysection {
+  margin-bottom: 120px;
+}
