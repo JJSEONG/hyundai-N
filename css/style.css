@@ -6,20 +6,21 @@
   font-family: "Noto Sans KR", sans-serif;
   color: #262626;
 }
-ul {
-  list-style: none;
-}
 a {
   text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
 }
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
+  color: #262626;
 }
-body {
-  height: 4000px;
-}
-/* header */
+/* //Common */
+
+/* Header */
 .navbar {
   margin-bottom: 0;
 }
@@ -64,6 +65,7 @@ body {
 .navbar-right > li > a {
   font-size: 20px;
 }
+/* //Header */
 
 /* Main-visual */
 .visual {
@@ -76,6 +78,8 @@ body {
 video {
   width: 100vw;
 }
+/* //Main-visual */
+
 /* 구매혜택 Section */
 .text-title {
   margin-bottom: 30px;
@@ -84,7 +88,7 @@ video {
   font-weight: 700;
 }
 .buybox-wrap {
-  width: 370px;
+  width: 100%;
   height: 470px;
   border-radius: 20px;
   background-color: #ecf1f6;
@@ -127,11 +131,14 @@ video {
   border: none;
   border-radius: 10px;
 }
+.buybox-wrap .buttonbox button a {
+  text-decoration: none;
+}
 .buybox-wrap .buttonbox button p {
   font-weight: 400;
 }
 .buybox-wrap .buttonbox button:first-child {
-  background-color: #fff;
+  background-color: #eee;
 }
 .buybox-wrap .buttonbox button:last-child{
   background-color: #575757;
@@ -142,3 +149,91 @@ video {
 .buysection {
   margin-bottom: 120px;
 }
+/* //구매혜택 Section */
+
+/* Car line-up */
+.carlineup {
+  height: 480px;
+}
+.carlineup-left {
+  background-color: #ecf1f6;
+}
+.carlineup .textbox {
+  margin: 85px 0 30px;
+}
+.carlineup .textbox h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.carlineup .textbox p {
+  color: #676767;
+}
+.carlineup .textbox p:nth-of-type(1) {
+  font-size: 18px;
+  margin: 10px 0 70px;
+  color: #262626;
+}
+.carlineup .textbox p:nth-of-type(3) {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #262626;
+}
+.buttonbox button {
+  width: 120px;
+  height: 40px;
+  background-color: #002c5e;
+  border: none;
+  margin-right: 10px;
+}
+.buttonbox button a {
+  color: #eee;
+  text-decoration: none;
+}
+.carlineup .imgbox {
+  line-height: 480px;
+}
+.carlineup-left .textbox h3,
+.carlineup-left .textbox p {
+  text-align: right;
+}
+.carlineup-left .buttonbox {
+  text-align: right;
+}
+/* // Car line-up */
+/* Search Section */
+.search-bg {
+  background-color: #5e5e5e;
+  height: 100px;
+}
+.search-wrap .textbox {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.search-wrap .textbox p{
+  color: #eee;
+}
+.search-wrap .textbox p:first-child {
+  font-size: 20px;
+  font-weight: 500;
+}
+.search-wrap .textbox p:last-child {
+  font-weight: 300;
+}
+.search-wrap .buttonbox {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.search-wrap .buttonbox button {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #eee;
+  font-size: 18px;
+}
+/* //Search Section */
