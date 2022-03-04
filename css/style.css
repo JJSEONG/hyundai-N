@@ -237,3 +237,40 @@ video {
   font-size: 18px;
 }
 /* //Search Section */
+/* Footer Section */
+.footer-bg {
+  background-color: #141414;
+  height: 150px;
+}
+.footer-bg .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-bg .list li {
+  margin: 30px 0 10px;
+  position: relative;
+}
+.footer-bg .list li::before {
+  content: '';
+  position: absolute;
+  border-right: 1px solid #eee;
+  top: calc(50% - 6px);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+.footer-bg .list li:last-child::before {
+  border-right: none;
+}
+.footer-bg .list a {
+  padding: 0 20px;
+  color: #eee;
+  text-decoration: none;
+}
+.footer-bg .textbox p {
+  color: #eee;
+  text-align: center;
+}
+/* //Footer Section */
