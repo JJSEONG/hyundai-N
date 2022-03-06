@@ -158,50 +158,65 @@ video {
 /* Car line-up */
 .carlineup {
   height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .carlineup-left {
   background-color: #ecf1f6;
 }
 .carlineup .textbox {
-  margin: 85px 0 30px;
+  margin-top: 30px;
 }
 .carlineup .textbox h3 {
-  font-size: 36px;
+  font-size: 22px;
   font-weight: 700;
 }
 .carlineup .textbox p {
   color: #676767;
 }
 .carlineup .textbox p:nth-of-type(1) {
-  font-size: 18px;
-  margin: 10px 0 70px;
+  font-size: 14px;
+  margin-top: 15px;
   color: #262626;
+}
+.carlineup .textbox p:nth-of-type(2) {
+  font-size: 12px;
+  margin-top: 25px;
 }
 .carlineup .textbox p:nth-of-type(3) {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
-  margin-bottom: 25px;
   color: #262626;
 }
+.carlineup .textbox p:nth-of-type(4) {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.carlineup .imgbox {
+  /* line-height: 400px; */
+  margin-top: 20px;
+}
+.buttonbox {
+  margin-top: 30px;
+}
 .buttonbox button {
-  width: 120px;
-  height: 40px;
+  width: 70px;
+  height: 25px;
   background-color: #002c5e;
   border: none;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 .buttonbox button a {
   color: #eee;
   text-decoration: none;
+  font-size: 10px;
 }
-.carlineup .imgbox {
-  line-height: 480px;
+.carlineup .imgbox img {
+  width: 100%;
 }
 .carlineup-left .textbox h3,
 .carlineup-left .textbox p {
-  text-align: right;
-}
-.carlineup-left .buttonbox {
   text-align: right;
 }
 /* // Car line-up */
