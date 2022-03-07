@@ -165,6 +165,11 @@ video {
 .carlineup-left {
   background-color: #ecf1f6;
 }
+.carlineup .lineup-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .carlineup .textbox {
   margin-top: 30px;
 }
@@ -194,10 +199,17 @@ video {
   margin-top: 10px;
 }
 .carlineup .imgbox {
-  /* line-height: 400px; */
-  margin-top: 20px;
+  padding-top: 30px;
+  max-width: 300px;
 }
-.buttonbox {
+.carlineup .col-xs-12.imgbox {
+  float: none;
+  clear: both;
+}
+.carlineup .imgbox img {
+  width: 100%;
+}
+.carlineup .buttonbox {
   margin-top: 30px;
 }
 .buttonbox button {
@@ -212,13 +224,6 @@ video {
   text-decoration: none;
   font-size: 10px;
 }
-.carlineup .imgbox img {
-  width: 100%;
-}
-.carlineup-left .textbox h3,
-.carlineup-left .textbox p {
-  text-align: right;
-}
 /* // Car line-up */
 /* Search Section */
 .search-bg {
@@ -232,15 +237,15 @@ video {
   justify-content: center;
   align-items: flex-start;
 }
-.search-wrap .textbox p{
+.search-wrap .textbox p {
   color: #eee;
 }
 .search-wrap .textbox p:first-child {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
 }
 .search-wrap .textbox p:last-child {
-  font-weight: 300;
+  font-weight: 400;
 }
 .search-wrap .buttonbox {
   display: flex;
@@ -253,7 +258,10 @@ video {
   height: 50px;
   background-color: transparent;
   border: 1px solid #eee;
-  font-size: 18px;
+  margin: 0 5px;
+}
+.search-wrap .buttonbox button a {
+  font-size: 14px;
 }
 /* //Search Section */
 /* Footer Section */
@@ -278,18 +286,70 @@ video {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 12px;
+  height: 10px;
 }
 .footer-bg .list li:last-child::before {
   border-right: none;
 }
-.footer-bg .list a {
-  padding: 0 20px;
+.footer-bg .list li a {
+  padding: 0 5px;
   color: #eee;
   text-decoration: none;
+  font-size: 12px;
 }
 .footer-bg .textbox p {
   color: #eee;
   text-align: center;
+  font-size: 8px;
 }
 /* //Footer Section */
+
+@media screen and (min-width: 768px) {
+  .carlineup .textbox {
+    text-align: left;
+  }
+  .carlineup-left .textbox {
+    text-align: right;
+  }
+  .carlineup .textbox h3 {
+    font-size: 30px;
+  }
+  .carlineup .textbox p:nth-of-type(1) {
+    font-size: 18px;
+  }
+  .carlineup .textbox p:nth-of-type(2) {
+    font-size: 16px;
+  }
+  .carlineup .textbox p:nth-of-type(3) {
+    font-size: 30px;
+  }
+  .carlineup .textbox p:nth-of-type(4) {
+    font-size: 16px;
+  }
+  .carlineup .imgbox {
+    max-width: 500px;
+  }
+  .carlineup .buttonbox {
+    margin-top: 60px;
+  }
+  .carlineup .buttonbox button {
+    width: 120px;
+    height: 40px;
+  }
+  .carlineup .buttonbox button:nth-child(2) {
+    margin: 0 10px;
+  }
+  .carlineup .buttonbox button a {
+    font-size: 14px;
+  }
+  .footer-bg .list li::before {
+    height: 14px;
+  }
+  .footer-bg .list li a {
+    padding: 20px 20px;
+    font-size: 16px;
+  }
+  .footer-bg .textbox p {
+    font-size: 12px;
+  }
+}
