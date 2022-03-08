@@ -23,14 +23,18 @@ h1, h2, h3, h4, h5, h6, p {
 /* Header */
 .navbar {
   margin-bottom: 0;
+  border: none;
+  border-radius: 0;
 }
-.navbar-default .navbar-nav>li>a {
-  color: #262626;
+.navbar-inverse .navbar-nav>li>a {
   position: relative;
-  width: 100px;
+  max-width: 200px;
   margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 20px;
 }
-.navbar-default .navbar-nav>li>a::before {
+.navbar-inverse .navbar-nav>li>a::before {
   content: '';
   position: absolute;
   top: 0;
@@ -38,7 +42,7 @@ h1, h2, h3, h4, h5, h6, p {
   left: 0;
   right: 0;
 }
-.navbar-default .navbar-nav>li:hover a::before {
+.navbar-inverse .navbar-nav>li:hover a::before {
   border-bottom: 2px solid #007fa8;
 }
 .navbar-header button {
@@ -54,21 +58,15 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   justify-content: center;
   align-items: center;
+  float: none;
 }
 .logo {
   width: 100px;
 }
-.navbar-right {
-  height: 90px;
+.navlist {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.navbar-right li {
-  width: 100%;
-}
-.navbar-right > li > a {
-  font-size: 14px;
 }
 /* //Header */
 
@@ -322,7 +320,20 @@ video {
 /* //Footer Section */
 
 /* 미디어쿼리 적용 */
+@media screen and (max-width: 400px) {
+  .navbar-inverse .navbar-nav>li>a {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+}
 @media screen and (min-width: 768px) {
+  .navlist {
+    float: right;
+    height: 90px;
+  }
+  .navbar-inverse .navbar-nav>li>a {
+    font-size: 18px;
+  }
   .navbar-default .navbar-nav {
     float: right;
   }
@@ -394,7 +405,13 @@ video {
   }
 }
 @media screen and (min-width:992px) {
+  .buybox-wrap {
+    height: 470px;
+  }
   .buybox-wrap .textbox {
     margin-left: 30px;
+  }
+  .buybox-wrap .image-wrap img {
+    margin: 60px 0 80px;
   }
 }
