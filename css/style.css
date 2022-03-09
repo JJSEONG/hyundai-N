@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* Common */
 * {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   color: #262626;
 }
 a {
@@ -54,14 +55,14 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #aaa;
 }
 .navbar-brand {
-  height: 90px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   float: none;
 }
 .logo {
-  width: 100px;
+  width: 60px;
 }
 .navlist {
   display: flex;
@@ -75,8 +76,12 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   margin-bottom: 120px;
 }
+.video-wrap {
+  max-height: 720px;
+  overflow: hidden;
+}
 video {
-  width: 100%;
+  width: 100vw;
 }
 /* //Main-visual */
 
@@ -88,6 +93,14 @@ video {
 .glyphicon {
   color: #eee;
 }
+.glyphicon-chevron-left:before {
+  content: "<";
+  font-size: 30px;
+}
+.glyphicon-chevron-right:before {
+  content: ">";
+  font-size: 30px;
+}
 .text-title {
   margin-bottom: 30px;
 }
@@ -96,7 +109,7 @@ video {
 }
 .buybox-wrap {
   width: 100%;
-  height: 400px;
+  max-height: 500px;
   border-radius: 20px;
   background-color: #ecf1f6;
 }
@@ -110,6 +123,7 @@ video {
 .buybox-wrap .image-wrap img {
   margin: 60px 0 20px;
   width: 80%;
+  min-height: 90px;
 }
 .buybox-wrap .textbox h3 {
   font-size: 20px;
@@ -127,30 +141,30 @@ video {
 }
 .buybox-wrap .buttonbox {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  padding: 10px 0;
 }
 .buybox-wrap .buttonbox button {
-  width: 140px;
+  width: 120px;
   height: 40px;
-  margin: 0 10px;
+  margin: 5px;
   border: none;
   border-radius: 10px;
 }
 .buybox-wrap .buttonbox button a {
   text-decoration: none;
-}
-.buybox-wrap .buttonbox button p {
+  font-size: 14px;
   font-weight: 400;
 }
 .buybox-wrap .buttonbox button:first-child {
-  background-color: #eee;
+  background-color: #fefefe;
 }
 .buybox-wrap .buttonbox button:last-child{
   background-color: #575757;
 }
-.buybox-wrap .buttonbox button:last-child p {
+.buybox-wrap .buttonbox button:last-child a {
   color: #fff;
 }
 .buysection {
@@ -272,6 +286,7 @@ video {
 .search-wrap .buttonbox button a {
   font-size: 14px;
   color: #eee;
+  text-decoration: none;
 }
 /* //Search Section */
 /* Footer Section */
@@ -320,13 +335,37 @@ video {
 /* //Footer Section */
 
 /* 미디어쿼리 적용 */
+@media screen and (max-width: 320px) {
+  .buybox-wrap .image-wrap img {
+    height: 110px;
+  }
+  .footer-bg .list li a {
+    padding: 0 2px;
+  }
+}
 @media screen and (max-width: 400px) {
   .navbar-inverse .navbar-nav>li>a {
     font-size: 14px;
     padding: 0 5px;
   }
 }
+@media screen and (min-width: 320px) {
+  .buybox-wrap .image-wrap img {
+    height: 130px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .buybox-wrap .buttonbox {
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 768px) {
+  .logo {
+    width: 100px;
+  }
+  .navbar-brand {
+    height: 90px;
+  }
   .navlist {
     float: right;
     height: 90px;
@@ -348,6 +387,12 @@ video {
     width: 100px;
     margin: 0 auto;
     text-align: center;
+  }
+  .buybox-wrap .image-wrap img {
+    height: 132px;
+  }
+  .buybox-wrap .buttonbox {
+    flex-direction: row;
   }
   .carlineup .textbox {
     text-align: left;
@@ -413,5 +458,18 @@ video {
   }
   .buybox-wrap .image-wrap img {
     margin: 60px 0 80px;
+    min-height: 110px;
+  }
+  .buybox-wrap .buttonbox {
+    margin-top: 20px;
+  }
+  .buybox-wrap .buttonbox button a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .buybox-wrap .image-wrap img {
+    margin: 60px 0 80px;
+    min-height: 132px;
   }
 }
