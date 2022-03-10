@@ -92,12 +92,6 @@ video {
 .glyphicon {
   color: #eee;
 }
-.glyphicon-chevron-left::before {
-  content: '◀';
-}
-.glyphicon-chevron-right::before {
-  content: '▶';
-}
 .text-title {
   margin-bottom: 30px;
 }
