@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* Common */
 * {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: sans-serif;
   color: #262626;
 }
 a {
@@ -93,13 +92,11 @@ video {
 .glyphicon {
   color: #eee;
 }
-.glyphicon-chevron-left:before {
-  content: "<";
-  font-size: 30px;
+.glyphicon-chevron-left::before {
+  content: '◀';
 }
-.glyphicon-chevron-right:before {
-  content: ">";
-  font-size: 30px;
+.glyphicon-chevron-right::before {
+  content: '▶';
 }
 .text-title {
   margin-bottom: 30px;
@@ -309,7 +306,6 @@ video {
   border-right: 1px solid #eee;
   top: 4px;
   bottom: 0;
-  left: 0;
   right: 0;
   height: 8px;
   margin: auto 0;
@@ -437,7 +433,6 @@ video {
     border-right: 1px solid #eee;
     top: calc(50% - 7px);
     bottom: 0;
-    left: 0;
     right: 0;
     height: 14px;
   }
